@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Barnes Dry Sump
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mr. Bago"
+  },
+  "headline": "Barnes Dry Sump",
+  "datePublished": "2020-12-03",
+  "image": [&quot;https://i.pinimg.com/originals/dd/42/af/dd42afed1c4492755a304c0aa8ea6b38.jpg&quot;,&quot;https://i.pinimg.com/originals/fa/69/bd/fa69bd44cbeb8eb93f94a8c39cab987e.jpg&quot;,&quot;https://i.pinimg.com/736x/2e/9e/a1/2e9ea129bb39cb8ded92258166dec02e.jpg&quot;],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Barn Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=barnes dry sump",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript" src="https://andromang.github.io/arshgo.js"></script>
+<!--ads/auto.txt-->
+<meta name="google-site-verification" content="EiBqKz1ziYflerTPPUrnZxadQzGOPgN6f9u3PHdC97M" /></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Barnes Dry Sump
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!--ads/inheader.txt-->
+		<script type="text/javascript" src="https://andromang.github.io/atshgo.js"></script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Barnes Dry Sump</strong>. For over 30 years the barnes family has focused on emerging trends in engine development in a variety of racing environmentsa including nascar late models usac sprints and midgets world of outlaws marine and drag racing. Configurations are available in 3 4 and 5 stages.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/10/de/32/10de32e21404e1ed5c0c56533e68a891.jpg" alt="Wayne 1 2 Hp Battery Backup Sump Pump System Wss30v The Home Depot Backup Sump Pump Sump Pump Home Repair" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSp_IPgxOitiBz21j3pdW-ZqTh5rwwl6DTAKg';">
+        <figcaption>Wayne 1 2 Hp Battery Backup Sump Pump System Wss30v The Home Depot Backup Sump Pump Sump Pump Home Repair from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        4 stage dry sump oil pump. We feature barnes dry sump oil systems. Mercury racing 1075 dry sump pump.
+    </p>
+    <h3>Weaver bros 3 stage drysump oil pump imca ump wissota gambler scp.</h3>
+    <p>Weaver bros 3 stage drysump oil pump imca ump wissota gambler scp. Bilstein gas shock absorber. 299 99 12 95 shipping. Barnes systems inc 3162 kashiwa st.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ken Block S Gymkhana Seven Mustang Chassis Fabrication Ken Block Mustang" src="https://i.pinimg.com/originals/d9/35/a9/d935a93897b8eadfc39b0bc6c5694a27.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiZg-J9WtEYKBwkeHsPTy2rSnNo96p7UJjmA';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Bilstein gas shock absorber.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Fuel Tanks Dry Sump Oil Tanks We Make It All In 2020 Sump Drag Racing Cars Drag Racing" src="https://i.pinimg.com/originals/fa/69/bd/fa69bd44cbeb8eb93f94a8c39cab987e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFS8mwOos1M5m12v7OXO4P3dvjA8ku3eFDug';" />
+        <small>Source: www.pinterest.com</small>
+        <p>375 00 shipping.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Rcr Slc Superlite Coupe Sl C 750 Hp 6 Stage Dry Sump Ac Heat Full Interior New Replica Kit Makes Superlite Coupe For Sale In Fraser Mi Sump Ac Heating Coupe" src="https://i.pinimg.com/600x315/20/e6/46/20e646266db25d91c0c3f330e567790d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSifMLypN3t8CzhGGQw7TOAhoIKmev3EkQE2Q';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Brisk usa spark plugs.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="How A Dry Sump Oil System Can Save Your Vette Corvette Online Sump Vette Monster Track" src="https://i.pinimg.com/originals/3c/e2/38/3ce2383fbcf1a1bb163ec3144ddfbd96.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1gT4tpbj7-dbEPVm0jVnvI5RAkzFW0uhv8g';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Well backgrounded in cylinder head development and induction components company founder al barnes created dry sump and.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Markert Bbc 4 1 8 Complete Deal Sump Pump Water Pumps Big Block" src="https://i.pinimg.com/originals/98/ba/f9/98baf92c8c3c2bb632b0b90581d0d521.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1MNzk_Bbfj_P6HirvwWRU9Hi_bJPkWfuWeg';" />
+        <small>Source: www.pinterest.com</small>
+        <p>375 00 shipping.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Black Friday 2014 Barnes Sp33vf 1 3 Hp Vertical Float Automatic Sump Pump From Barnes Cyber Monday Sump Pump Black Friday Tools Sump" src="https://i.pinimg.com/736x/00/c9/1b/00c91bd900daac8acd27627978c1060f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa77mNR8A6h_7oTSnIL9uz1vbEIa0MZYiWYQ';" />
+        <small>Source: in.pinterest.com</small>
+        <p>Torrance ca 90505 310 534 3844 phone 310 534 1229 fax.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Here Is The Costella Hoogerhyde I Gl Lakester Nebulous Theorem Xi Fastest 200 662 I Engine Size Is Between 46 Bonneville Bonneville Salt Flats Race Cars" src="https://i.pinimg.com/originals/df/ba/87/dfba87c4aa586fe7d97287a9e6919813.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjF2o9GdTBTzrhrJt_KOsl_z4GleLen8u_kg';" />
+        <small>Source: www.pinterest.com</small>
+        <p>299 99 12 95 shipping.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Https Encrypted Tbn0 Gstatic Com Images Q Tbn And9gcsjtfa0 Qrv0ufda0zhpnrp Eudp4tx8lngbg Usqp Cau" src="https://i.pinimg.com/originals/d4/c0/a0/d4c0a054ea9754aca2a099f3aa3db698.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNoAMTwI1MGWcMXITu_m0ZLPbiHQxAyrogqQ';" />
+        <small>Source: </small>
+        <p>Well backgrounded in cylinder head development and induction components company founder al barnes created dry sump and.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Barnes 3 Stage Dry Sump Oil Pump Dirt Late Model Racing Weaver Scp Peterson Used Dirt Late Models Late Model Racing Things To Sell" src="https://i.pinimg.com/170x/0a/3d/70/0a3d7027c4ed8829b2033b3acdf6924d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuYz_UaIHlgxxtDtWbCpfzvaFRDCccFyqtWg';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Pit stop usa is the online motorsports superstore.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/wooden-barn-door.html"><i>&larr; wooden barn door</i></a>
+                                                                    
+                                        <a href="/yankee-furniture-barn.html"><i>yankee furniture barn &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!--ads/unarticle.txt-->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type="text/javascript" src="https://andromang.github.io/fotshgo.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4440973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4440973&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open(window.location.href, '_blank');
+                    window.location.href = 'https://proverbnoncommittalvault.com/abp9rxpru?key=244f42e0fc3af9f066e34636927e676f';
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

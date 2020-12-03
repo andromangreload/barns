@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        My Auction Barn
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mr. Bago"
+  },
+  "headline": "My Auction Barn",
+  "datePublished": "2020-12-03",
+  "image": [&quot;https://i.pinimg.com/736x/ef/15/6e/ef156e12507f063b37c2ae03e674972c.jpg&quot;,&quot;https://i.pinimg.com/originals/0c/70/22/0c70225491e95b1c5d97ed133008e04d.jpg&quot;,&quot;https://i.pinimg.com/736x/4c/fe/d0/4cfed0548dcf4538bc6f8520e5e7ab00.jpg&quot;],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Barn Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=my auction barn",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript" src="https://andromang.github.io/arshgo.js"></script>
+<!--ads/auto.txt-->
+<meta name="google-site-verification" content="EiBqKz1ziYflerTPPUrnZxadQzGOPgN6f9u3PHdC97M" /></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            My Auction Barn
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!--ads/inheader.txt-->
+		<script type="text/javascript" src="https://andromang.github.io/atshgo.js"></script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>My Auction Barn</strong>. Be the first to know. Find rare and collectible items and locate auctions near you.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/736x/4c/fe/d0/4cfed0548dcf4538bc6f8520e5e7ab00.jpg" alt="Barn Find Brough Becomes The Most Expensive British Bike Ever Sold At Auction Auction Barn Bik In 2020 Vintage Motorcycles Classic Bikes British Motorcycles" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUIffco-YwNO5BHW7Oi8AtqVzVr7YzdlE7mA';">
+        <figcaption>Barn Find Brough Becomes The Most Expensive British Bike Ever Sold At Auction Auction Barn Bik In 2020 Vintage Motorcycles Classic Bikes British Motorcycles from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Robinson auctions gatherings orleans in. The auction barn selling every week online this week over 600 items 40 plus guns ammo davis and willett furniture primitives coins and more we are loaded with something for everyone every week furniture collectibles tools unique and different items guns ammo and so much more check us out every week and never have to leave your living room at theauctionbarn hibid co you will have a. Mask gloves required.
+    </p>
+    <h3>Find rare and collectible items and locate auctions near you.</h3>
+    <p>Restaurant equipment vehicles auction auction will run from 11 19 12 10 online only preview held on 12 5 20 from 10am 4pm preview held at 1624 market place dr. In business for over 25 years wayne and gretta s country auction barn has thrived and been a big family run business in cambria county. Mask gloves required. Be the first to know.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Nevado Duende Cm By Mel Miller Auction Id 152181 End Time Dec 08 2017 16 03 45 My Auction Barn Custom Horse Horse Breeds Breyer Horses" src="https://i.pinimg.com/originals/37/98/dd/3798dd51c082a3bced65f7a298b40f20.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjFagyl32Zu0P0NMD-8zIRVtSQlz36j-mD0A';" />
+        <small>Source: www.pinterest.com</small>
+        <p>12 12 9am 4pm 12 3 9am 3pm 1624 market place dr.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Mini Catalina Resin By Jaime Baker Auction Id 150989 End Time Mar 25 2015 21 21 41 My Auction Barn" src="https://i.pinimg.com/originals/c9/88/ff/c988ff3df5c839f5f2e4cf3756eadc6e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo8KadRdaIR165LYesqUn5ghELRQ6JogkZrw';" />
+        <small>Source: co.pinterest.com</small>
+        <p>Great falls mt auction is continue reading upcoming auctions.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Old Cattle Barn Turned Used Item Store Jeffersonville Ny Cattle Barn Jeffersonville Barn" src="https://i.pinimg.com/originals/f0/ee/ef/f0eeef0ffb981ae05f1fc2811b924a60.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlSUqzo7yRzjSnaAwodhBVOSjwY5ZwWtEiuw';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Fall snowmobile and atv auction all inventory will be at the auction barn.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Auction Block Sweatshirt In 2020 Farm Girl Cozy Sweatshirts Sweatshirts" src="https://i.pinimg.com/736x/ef/15/6e/ef156e12507f063b37c2ae03e674972c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0zJsjYwEaR2wPGGYa4k_24Mah1QTv9yQ2qg';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Fall snowmobile and atv auction all inventory will be at the auction barn.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Threat Level Midnight Auction Threat Level Midnight Custom Horse Horses" src="https://i.pinimg.com/originals/0c/70/22/0c70225491e95b1c5d97ed133008e04d.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnEcmweFFwMVaJWYJh7mLuCXj7WxyQqL5QTw';" />
+        <small>Source: in.pinterest.com</small>
+        <p>4 9 30am popp robinson auctions gatherings orleans in come to the toy tractor show the next day 12 5 hosted by antique machinery club.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Peregrine Micro Kestrel Resin By Mel Miller Auction Peregrine Horses" src="https://i.pinimg.com/564x/95/d7/50/95d75039bd80db02b9c1226f6d3e8462.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd8W-YVcw9-DtATYJd8yYd1FlNdqUs2G-baA';" />
+        <small>Source: www.pinterest.com</small>
+        <p>42 people follow this.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Cattle Auction Window On The Prairie Cattle Auction Barn Sale" src="https://i.pinimg.com/originals/ce/50/bc/ce50bc182ad601e970da3da38e060d51.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwZyxxKeFmI18a-hruMx6BFI7qUXNaAvwaUA';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Boasting an impressive turnover of antique furniture antique jewelry and fine collectables the auction barn has greatly expanded its clientele and reach with online antiques catalogues online auctions and of course the classic live auctioneer.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="El Dorado Animal Clinic Pet Clinic Small Pets Animals" src="https://i.pinimg.com/originals/cf/38/74/cf38748c947bb265b48af5a288c663ae.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2z9s0aBwykGP3mJsIiJBxlbJvkCVEkKD9bA';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Established in 2008 the auction barn has quickly become canberra s premier antique auction house.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On My Heroes Have Always Been Cowboys" src="https://i.pinimg.com/474x/3a/d8/af/3ad8af5bf9a9b9269002c83fdfbea4c4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9mozdrl4uI-wAcC29PuOm_DeyWvoTkTbgLA';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Boasting an impressive turnover of antique furniture antique jewelry and fine collectables the auction barn has greatly expanded its clientele and reach with online antiques catalogues online auctions and of course the classic live auctioneer.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/barnes-park-swimming-pool.html"><i>&larr; barnes park swimming pool</i></a>
+                                                                    
+                                        <a href="/barnes-noble-roseville.html"><i>barnes noble roseville &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!--ads/unarticle.txt-->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type="text/javascript" src="https://andromang.github.io/fotshgo.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4440973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4440973&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open(window.location.href, '_blank');
+                    window.location.href = 'https://proverbnoncommittalvault.com/abp9rxpru?key=244f42e0fc3af9f066e34636927e676f';
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

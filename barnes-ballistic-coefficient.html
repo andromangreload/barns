@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Barnes Ballistic Coefficient
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mr. Bago"
+  },
+  "headline": "Barnes Ballistic Coefficient",
+  "datePublished": "2020-12-03",
+  "image": [&quot;https://i.pinimg.com/originals/54/6b/7c/546b7c7074d208f0b43afcf4f1034e21.jpg&quot;,&quot;https://i.pinimg.com/originals/c0/a5/fb/c0a5fb211772a2fd54c572306c3c0a50.jpg&quot;,&quot;https://i.pinimg.com/originals/b1/e9/c1/b1e9c144845630533b7ead47dc20c7aa.jpg&quot;],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Barn Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=barnes ballistic coefficient",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript" src="https://andromang.github.io/arshgo.js"></script>
+<!--ads/auto.txt-->
+<meta name="google-site-verification" content="EiBqKz1ziYflerTPPUrnZxadQzGOPgN6f9u3PHdC97M" /></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Barnes Ballistic Coefficient
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!--ads/inheader.txt-->
+		<script type="text/javascript" src="https://andromang.github.io/atshgo.js"></script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Barnes Ballistic Coefficient</strong>. The higher the number the less drag the projectile will experience. The lrx features a long profile and boattail design that delivers match grade accuracy at long range with an incredibly high ballistic coefficient and terminal performance that delivers the quick clean ethical kills you ve come to expect from barnes.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/d4/96/6d/d4966d202df6f79cd8ce295ef78eb2b9.jpg" alt="Pin On Weapons" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5A4XZaLmkRjuk90Cgd-1elLGOH5J7T483oE792_dE6VPvXNA_4yZgWWZG3cNADg42goXj_NeU17Riruy3B51hTSQZhn1LhpI&amp;ec=45732302';">
+        <figcaption>Pin On Weapons from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        The lrx features a long profile and boattail design that delivers match grade accuracy at long range with an incredibly high ballistic coefficient and terminal performance that delivers the quick clean ethical kills you ve come to expect from barnes. Barnes lrx bullets have been developed to match the advancements in rifle accuracy and extended range optics. In ballistics the ballistic coefficient bc of a body is a measure of its ability to overcome air resistance in flight.
+    </p>
+    <h3>Barnes lrx bullets have been developed to match the advancements in rifle accuracy and extended range optics.</h3>
+    <p>The new tipped tsx features the same 100 percent copper body with multiple rings cut into the shank. New reloading data must be opened as a pdf. Bc can be expressed with the units kilogram per square meter kg m 2 or mass pound per square inch lbs. Index wt ballistic edi no.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Semi Automatic Rifles" src="https://i.pinimg.com/originals/c0/a5/fb/c0a5fb211772a2fd54c572306c3c0a50.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPdQ_yM1toTBT5phAZ-SNbuirXAuVm65zZpO3qg7H7tBoJm2JeTdr5SvoUIgzYXCxpSLVrqV2OH28swFQcMO_wOGENMWEV_7w&amp;ec=45732302';" />
+        <small>Source: www.pinterest.com</small>
+        <p>In 1932 fred barnes began selling bullets made in his bayfield colorado basement workshop.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Cartridges To Get" src="https://i.pinimg.com/originals/c8/d0/41/c8d0415557ab2fe77c78c59455b6f44f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2mAB8ZS4eSYNCpQuUxi30js0MdiLakH1ZmT0gBX7i-N_0S9OQ9FOvQTdSp9Is5dqDtcMbw-WDWL5sFqxwxNk_WNph09eoWZk&amp;ec=45732302';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Bc can be expressed with the units kilogram per square meter kg m 2 or mass pound per square inch lbs.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Weapons" src="https://i.pinimg.com/originals/d4/96/6d/d4966d202df6f79cd8ce295ef78eb2b9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5A4XZaLmkRjuk90Cgd-1elLGOH5J7T483oE792_dE6VPvXNA_4yZgWWZG3cNADg42goXj_NeU17Riruy3B51hTSQZhn1LhpI&amp;ec=45732302';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Index wt ballistic edi no.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Heavy 450 Marlin Ammo 500 Gr Fmj Fn Barnes Buster 1 625 Fps 20 Round Box Ammo Round Box Firearms" src="https://i.pinimg.com/originals/b1/e9/c1/b1e9c144845630533b7ead47dc20c7aa.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlpyO2DzSTd5FhBGINujx3KMaioZLp00FML478ZeXlw3Nlj7sgzhgj5BTR-iulwSUpSaE9G4hbunW9w6dBI-RXBdamsymP_4Q&amp;ec=45732302';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Ballistic coefficient is typically measured with a 3 digit expression.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On 303 British Reloading" src="https://i.pinimg.com/originals/c1/5e/d2/c15ed22db9e648f538847e4c82a1c0e4.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4hp_SCCs-hNLfO-KPOwAt-8KP4jAkk7Ezt4zkO6rCbiavu9-LhJtTUgrkGTy_HT-U4UO3subwIj4Ly_r_V-ZCWvCjA7uz60o&amp;ec=45732302';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The ballistic coefficient is the ability of the bullet to overcome air resistance in flight.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="30880 30 Cal 308 200gr Lrx Bt 50 Long Range Hunting Bullet Designs 50th" src="https://i.pinimg.com/originals/d0/e9/bc/d0e9bc9d158e4c8f59813c2a03e13da9.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjzQ46nog02-EEmgKqTfb9O52GjY5H4xiwSjiPGmioOFDheveODxnuNDktwvo2kmv2WMmUwyQ5_34c7asQ1xYTRE3n_BRAZTo&amp;ec=45732302';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The new tipped tsx features the same 100 percent copper body with multiple rings cut into the shank.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="223 Ballistics Chart Coefficient Gundata Org Ballistics Guns Tactical Calculator" src="https://i.pinimg.com/originals/1b/fc/4b/1bfc4bd717e75534c0704a680a26c1bb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6Vi3_zJZECdP3g19IlHWPXaRs3_B5Kva6W_su0Kk5FtkG9iVu7VTcv4AdbqQYEyQshLFk2VEYBRhprKaIotiRg2ykH38V7dc&amp;ec=45732302';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Ballistic coefficient is typically measured with a 3 digit expression.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On 458 Socom" src="https://i.pinimg.com/originals/cc/45/70/cc4570295d145a48b546387e7c61b78c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcf5SjuD9haXtQUWLztkVu38Qic997_RjGV59DXsDyvqBc1qy1ebq9VOMOV5vubheDkan4s3J7j7qmSNqLgGIsrRLjCR7Rnq0&amp;ec=45732302';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Over the next 40 years the company gained a solid reputation by offering premium bullets to hunters who rolled their own the barnes original became known as the top choice for african game.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Barnes Vor Tx 243 Win 80gr Ttsx Bt Ammunition Ammunition Copper Bullets Lehigh" src="https://i.pinimg.com/originals/14/0a/27/140a270837d1dca46e66b7fde4feaf1c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtqwFuA8vLJ8AklwZMkZfHXmS_AOY96McMtpPpIck9vhVsYTl3LAJ1mD9MVshxaEYMxUKP_brIlrGQmqZ7BIp8DCkSdb4OEfA&amp;ec=45732302';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The new tipped tsx features the same 100 percent copper body with multiple rings cut into the shank.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/loveseat-pottery-barn.html"><i>&larr; loveseat pottery barn</i></a>
+                                                                    
+                                        <a href="/little-red-barn.html"><i>little red barn &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!--ads/unarticle.txt-->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type="text/javascript" src="https://andromang.github.io/fotshgo.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4440973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4440973&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open(window.location.href, '_blank');
+                    window.location.href = 'https://proverbnoncommittalvault.com/abp9rxpru?key=244f42e0fc3af9f066e34636927e676f';
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

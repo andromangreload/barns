@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Barnes Maze Test
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mr. Bago"
+  },
+  "headline": "Barnes Maze Test",
+  "datePublished": "2020-12-03",
+  "image": [&quot;https://www.researchgate.net/profile/Kota_Tamada/publication/26327793/figure/fig5/AS:214133283790860@1428064761301/patDp-Mice-Show-Behavioral-Inflexibility-in-the-Morris-Water-Maze-and-Barnes-Maze.png&quot;,&quot;https://www.sylics.com/contract-research/files/2015/03/Barnes-maze1-345x229.jpg&quot;,&quot;moFWpnXOYy7bxM&quot;],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Barn Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=barnes maze test",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript" src="https://andromang.github.io/arshgo.js"></script>
+<!--ads/auto.txt-->
+<meta name="google-site-verification" content="EiBqKz1ziYflerTPPUrnZxadQzGOPgN6f9u3PHdC97M" /></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Barnes Maze Test
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!--ads/inheader.txt-->
+		<script type="text/javascript" src="https://andromang.github.io/atshgo.js"></script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Barnes Maze Test</strong>. The barnes maze is a popular test for assessing spatial learning and memory in rats and mice. The test is similar to the morris water maze with the important difference that this test does not require swimming.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://www.sylics.com/contract-research/files/2015/03/Barnes-maze1-345x229.jpg" alt="Barnes Maze Sylics Contract Research" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN8oczaBaE6ehCmSGx90D6tiC8dXgZHazokw';">
+        <figcaption>Barnes Maze Sylics Contract Research from www.sylics.com</figcaption>
+    </figure>
+        <p>
+        The behavioral test battery to study learning and memory deficits in mice is broad and may include the morris water maze the barnes maze and e and cross shaped mazes passive avoidance contextual fear conditioning novel object recognition and radial arm maze. Basically the animal is placed in a brightly lit environment on the top of the barnes maze which consists of a large round open platform provided with a fixed number of peripheral holes. Carol barnes developed a maze test for spatial learning and memory in 1979 where animals escaped from a brightly lit exposed circular open platform surface to a small dark recessed chamber located under one of the holes around the perimeter of the platform.
+    </p>
+    <h3>The behavioral test battery to study learning and memory deficits in mice is broad and may include the morris water maze the barnes maze and e and cross shaped mazes passive avoidance contextual fear conditioning novel object recognition and radial arm maze.</h3>
+    <p>1 put the animal on the maze and the escape box for 1 minute respectively to reduce the stress. Based on the delayed match to place experiment conducted in a standard water maze tank the modified barnes maze test assesses cognitive deficits in rodent models of cns disorders. The barnes maze contains 24 holes situated at. The iti of 15 minutes should be used to test the next 3 to 4 mice.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Patdp Mice Show Behavioral Inflexibility In The Morris Water Maze And Download Scientific Diagram" src="https://www.researchgate.net/profile/Kota_Tamada/publication/26327793/figure/fig5/AS:214133283790860@1428064761301/patDp-Mice-Show-Behavioral-Inflexibility-in-the-Morris-Water-Maze-and-Barnes-Maze.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL8ZDW3UdC78c3O9vukqTkO60BFkCMm0xIIg';" />
+        <small>Source: www.researchgate.net</small>
+        <p>The target hole must be closed.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="A Modified Barnes Maze For Juvenile Rats Bio Protocol" src="https://zh-cn.bio-protocol.org/attached/image/20181113/20181113021418_3854.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUCgtgeFBhqmrB_F1nZlcNlDhDY6nu_1YTsg';" />
+        <small>Source: bio-protocol.org</small>
+        <p>The barnes maze consists of a dark grey pvc circular platform radius 61 cm 70 cm above the floor.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Barnes Maze San Diego Instruments" src="https://sandiegoinstruments.com/wp-content/uploads/2018/08/IMG_0953.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTscYHEpjisTkdqbBYVhqpjTMsKbsJk0H_1A';" />
+        <small>Source: sandiegoinstruments.com</small>
+        <p>Modified barnes maze test.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Barnes Maze Neuroscience By Lafayette Instrument Company" src="https://www.limef.com/productimages/rat-barnes-see-thru.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNv3f6jhup4td3QttPH5rIMhebpAbgEc_lRQ';" />
+        <small>Source: lafayetteneuroscience.com</small>
+        <p>The modified barnes maze is thought to measure similar learning abilities as the dmp without forcing the subjects to perform a task under.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Barnes Maze Sylics Contract Research" src="https://www.sylics.com/contract-research/files/2015/03/Barnes-maze1-345x229.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN8oczaBaE6ehCmSGx90D6tiC8dXgZHazokw';" />
+        <small>Source: www.sylics.com</small>
+        <p>1 put the animal on the maze and the escape box for 1 minute respectively to reduce the stress.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Eschematic Representation Of The Experimental Procedures In Tested Download Scientific Diagram" src="https://www.researchgate.net/publication/335708972/figure/fig1/AS:801399893929990@1568080032961/Eschematic-representation-of-the-experimental-procedures-in-tested-groups-and-Barnes-maze.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg_uMd_GuGWYU8tXWChhmlf1WR_LN2rnwGMw';" />
+        <small>Source: www.researchgate.net</small>
+        <p>The barnes maze is a tool used in psychological laboratory experiments to measure spatial learning and memory the test was first developed by dr.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Modified Barnes Maze Test Behavioral And Functional Neuroscience Laboratory Stanford Medicine" src="https://med.stanford.edu/sbfnl/services/bm/lm/bml-barnes-maze/_jcr_content/main/panel_builder/panel_1/image.img.620.high.png/1421187061742.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5u3KBjn5ZLkx_DMDgl52w9FIw7Spg7zn6JQ';" />
+        <small>Source: med.stanford.edu</small>
+        <p>Carol barnes in 1979.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Barnes Maze Probe Trial Behavioral Measurements In The Barnes Maze Download Scientific Diagram" src="https://www.researchgate.net/profile/Julieta_Aguggia/publication/334856939/figure/fig4/AS:795126653804554@1566584375440/Barnes-maze-probe-trialBehavioral-measurements-in-the-Barnes-maze-test-A-Number-of.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBuySET23yCccLoaElCjwre0qaaPyRhVGyxA';" />
+        <small>Source: www.researchgate.net</small>
+        <p>These tests rely on different brain regions including hippocampus amygdala and.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Barnes Maze" src="https://www.hugo-sachs.de/media/catalog/product/cache/62fea656a0c51c97eb54cff2b4efba4c/0/2/02_barnes_8x8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCllqoQzzLm_fH9oPZzVxVKb_cMbyuLBEC0w';" />
+        <small>Source: www.hugo-sachs.de</small>
+        <p>To begin the test the animal is placed on top of the barnes maze platform a brightly lit environment consisting of a fixed number of holes around its periphery.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/pottery-barn-kids-bed-frame.html"><i>&larr; pottery barn kids bed frame</i></a>
+                                                                    
+                                        <a href="/pottery-barn-kids-crib.html"><i>pottery barn kids crib &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!--ads/unarticle.txt-->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type="text/javascript" src="https://andromang.github.io/fotshgo.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4440973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4440973&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open(window.location.href, '_blank');
+                    window.location.href = 'https://proverbnoncommittalvault.com/abp9rxpru?key=244f42e0fc3af9f066e34636927e676f';
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

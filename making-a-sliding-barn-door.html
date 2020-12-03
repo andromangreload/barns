@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Making A Sliding Barn Door
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mr. Bago"
+  },
+  "headline": "Making A Sliding Barn Door",
+  "datePublished": "2020-12-03",
+  "image": [&quot;https://i.pinimg.com/736x/77/5d/f2/775df2a9b08efde1ec97d8a6786cb3d1.jpg&quot;,&quot;https://i.pinimg.com/originals/53/e7/c1/53e7c121a912bfc41aa1136f9882415c.jpg&quot;,&quot;https://i.pinimg.com/originals/07/eb/df/07ebdf1c08d4d3c09f685c3c3d7f472c.jpg&quot;],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Barn Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=making a sliding barn door",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript" src="https://andromang.github.io/arshgo.js"></script>
+<!--ads/auto.txt-->
+<meta name="google-site-verification" content="EiBqKz1ziYflerTPPUrnZxadQzGOPgN6f9u3PHdC97M" /></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Making A Sliding Barn Door
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!--ads/inheader.txt-->
+		<script type="text/javascript" src="https://andromang.github.io/atshgo.js"></script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Making A Sliding Barn Door</strong>. I was able to build this one in about 30 minutes. Which means fewer pieces and cuts and that means easier to build.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/736x/77/5d/f2/775df2a9b08efde1ec97d8a6786cb3d1.jpg" alt="Diy Single Sliding Barn Door Sugar Maple Notes Making Barn Doors Diy Sliding Barn Door Diy Door" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBzoyd56j3d0MAp7cpeX2NjVYkKhsXU2_QSQ';">
+        <figcaption>Diy Single Sliding Barn Door Sugar Maple Notes Making Barn Doors Diy Sliding Barn Door Diy Door from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Which means fewer pieces and cuts and that means easier to build. Our door opening is 4 wide so we built ours to be 4 wide and 7 tall. Not only did it solve the problem but it added another element of visual interest to the room.
+    </p>
+    <h3>Place some lovely decoration pieces on both sides of your doors to give a nice rustic finish.</h3>
+    <p>Give your master bedroom a complete makeover with a sliding barn door. Our door opening is 4 wide so we built ours to be 4 wide and 7 tall. Timber frame sliding barn door. Diy sliding barn door hardware is available in all manner of styles and budgets and the door options are limitless from salvage finds to original diy creations like this one a mix of pallet wood and common cedar.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Outdoor Furniture Plans Diy Crafts Blog Diy Barn Door Plans Home Diy Diy Barn Door" src="https://i.pinimg.com/originals/f8/86/8a/f8868aba011ae5949c7d7c85c87ac345.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTThlhoTubieN2qC99xB7kkrBfw1lLt-X3zxg';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Coarse drywall screws 1 countersink bit.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Easiest Cheapest Way To Build A Rustic Barn Door Free Pdf Plans In 2020 Making Barn Doors Rustic Barn Door Diy Sliding Barn Door" src="https://i.pinimg.com/736x/5b/76/d9/5b76d9c420c6b627cc134711d767494e.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsesO8qxQR28N2qZHP9SZOwm4o6NgL9GiPxA';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Follow this tutorial on how to build a sliding barn door from toh senior technical editor mark powers.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Build And Install A Sliding Barn Door Diywithrick Diy Sliding Barn Door Barn Door Designs Interior Sliding Barn Doors" src="https://i.pinimg.com/originals/a7/22/c1/a722c14cba676867a7d95a513b862117.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh4kBALy-qmWPMNiwiTpyTwKz-9KuSJlL0XA';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Where to begin i ve been going down a bit of a rabbit hole of japanese timber frame joinery lately.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Diy Sliding Double Barn Doors Reclaimed Wood Infarrantlycreative Barn Door Designs Diy Door Door Plan" src="https://i.pinimg.com/originals/50/c7/66/50c7660d1b7cda038667a5dc854ceb5f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStjUf2xHpwYXh2I9hm_iMAS9z_EMzDsn2qgQ';" />
+        <small>Source: www.pinterest.com</small>
+        <p>This is going to be a two part series.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Barn Door Construction How To Build Sliding Barn Doors Exterior Barn Doors Exterior Sliding Barn Doors Diy Sliding Barn Door" src="https://i.pinimg.com/originals/53/e7/c1/53e7c121a912bfc41aa1136f9882415c.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRET13wjCW_GuKmWQyWLWYr0CIUCu0NmDEU1g';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Timber frame sliding barn door.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Building A Barn Door Beginners Guide With Free Plans H2obungalow Building A Barn Door Free Building Plans Diy Barn Door Plans" src="https://i.pinimg.com/originals/0d/fb/11/0dfb11e9da66cca6d8fa125e57f303b1.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTr3GPKxBkLuEghdoUmCT5Ah9yzNM_qJ6pljg';" />
+        <small>Source: www.pinterest.com</small>
+        <p>It can make for an appealing unique addition to any home and to get you started i m including the free downloadable plans for th.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Knotty Alder Barn Door Styles Barn Door Designs Diy Barn Door Farmhouse Doors" src="https://i.pinimg.com/originals/2d/1b/c9/2d1bc98026b86863772c1c0a5814da66.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtJ0YUhLyNf5hr6IVTHCQ6xoQ0-lm1xQj7EA';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Make sliding barn door media console.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="How To Make A Diy Bifold Barn Door Transform A Closet Door For 15 Diy Sliding Barn Door Barn Door Handles Barn Door Projects" src="https://i.pinimg.com/736x/24/b8/cf/24b8cf76ad29c74716737072aa31d40f.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1DAIJRGRfkfPS3AgUEpvNQtJHa0spxpbMQw';" />
+        <small>Source: www.pinterest.com</small>
+        <p>How to build a sliding barn door.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="How To Build A Two Sided Barn Door In 2020 Barn Door Designs Diy Sliding Barn Door Rustic Barn Door" src="https://i.pinimg.com/originals/78/25/79/78257927e19fd31da1470f5affe91f1c.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNLR6E36G-mMa1-obY9B8VeGSWWV6TS3IXsA';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Take it down and replace it with a sliding barn door.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/the-barn-at-redgate.html"><i>&larr; the barn at redgate</i></a>
+                                                                    
+                                        <a href="/the-barn-bar.html"><i>the barn bar &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!--ads/unarticle.txt-->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type="text/javascript" src="https://andromang.github.io/fotshgo.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4440973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4440973&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open(window.location.href, '_blank');
+                    window.location.href = 'https://proverbnoncommittalvault.com/abp9rxpru?key=244f42e0fc3af9f066e34636927e676f';
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

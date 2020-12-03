@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        The Barn Phish
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mr. Bago"
+  },
+  "headline": "The Barn Phish",
+  "datePublished": "2020-12-03",
+  "image": [&quot;https://i.pinimg.com/736x/fd/22/ed/fd22ed5a471fb0cbef3829be719ac7fd.jpg&quot;,&quot;https://i.pinimg.com/originals/7c/52/b8/7c52b87d492154f6e2068402b0e197df.jpg&quot;,&quot;https://i.pinimg.com/736x/3e/47/d7/3e47d708a42ec2e669dfb6fe665aa2e5.jpg&quot;],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Barn Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=the barn phish",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript" src="https://andromang.github.io/arshgo.js"></script>
+<!--ads/auto.txt-->
+<meta name="google-site-verification" content="EiBqKz1ziYflerTPPUrnZxadQzGOPgN6f9u3PHdC97M" /></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            The Barn Phish
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!--ads/inheader.txt-->
+		<script type="text/javascript" src="https://andromang.github.io/atshgo.js"></script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>The Barn Phish</strong>. The door of the outhouse on the south side of the barn serves as the cover of phish s farmhouse album. Phish s trey anastasio looks to be at the barn the fabled studio outside burlington vt.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/600x315/0c/f1/15/0cf1159233ee61bc75456d73d018c497.jpg" alt="50 Gig Poster Designs We Re Obsessed With Concert Poster Art Phish Posters Rock Poster Art" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2LpV1_Ck51rM33QlDQkmdJXAeaW_lhtEn71Mo4368icd6h8fdEQL7aGULkJq9cH1h0jBKnxqHMDhnwcUnkObxXpEw7h9aX64&amp;ec=45732300';">
+        <figcaption>50 Gig Poster Designs We Re Obsessed With Concert Poster Art Phish Posters Rock Poster Art from id.pinterest.com</figcaption>
+    </figure>
+        <p>
+        So far we ve distributed just about 1 500 000 to support music education for children. The outhouse on the south side of the barn serves as the cover of phish s farmhouse album. The door of the outhouse on the south side of the barn serves as the cover of phish s farmhouse album.
+    </p>
+    <h3>The barn has been the creative hub for all of trey s recording projects since the mid 90s and has become a sort of home away from home for the members of phish through the years.</h3>
+    <p>That has been the recording site of many phish albums and is the stuff of phish legend. Reconstructed between 1996 and 1998 from an existing structure the alan irish barn the barn has been used by phish to record several albums and has. The door of the outhouse on the south side of the barn serves as the cover of phish s farmhouse album. The barn as seen by spaaaaace google maps.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="I Never Noticed Until I Read This Interview That The Creator Of The Barn Ball Lars Fisk Was Actually Inside It When Th Abstract Sculpture Life Run Abstract" src="https://i.pinimg.com/originals/50/1a/03/501a03245d510980431ed98f1ef8accb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrp_5KzEHwjaYQU03O9UQ103liEn5okNxnMF0rJz8eKLW6i1pYadUhTrKtLUcK_i26heLV-UGAz4clcPl0PcmdgtDAb-vwjAg&amp;ec=45732300';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The outhouse on the south side of the barn serves as the cover of phish s farmhouse album.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="The Barn Recording Studio Owned By Trey Home Studio Setup Barn Design Rustic Barn Homes" src="https://i.pinimg.com/originals/3e/a8/9c/3ea89cdeaa7750d7703380544376e630.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWXpuPcwRgbVIp1RYaZhOHyHNaD7Quvw9yJM98-YGgurCAHJDP4cFiRj1Qe-lo5-jh_pnHfop1PTpYUWaHmXc8RX77qKF1cq0&amp;ec=45732300';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Phish s trey anastasio looks to be at the barn the fabled studio outside burlington vt.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Yasgur S Farm" src="http://www.jambands.com/images/2011/05/26/28793/229082_111751512241992_100002214325565_109654_2210911_n-353x.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOI3TuL4c9bn-gIstF4c0HTod2yGkwkMTgFgO21ONGDGpm3W8-Bc4J5cT-NAKNDypmnVTPAZsO0188BvQFNicqwUBB4YkI8mI&amp;ec=45732300';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The door of the outhouse on the south side of the barn serves as the cover of phish s farmhouse album.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Creative Houses The Barn Phish S Recording Studio In Vermont Estudio De Musica Sala De Musica Sala De Grabacion" src="https://i.pinimg.com/736x/fd/22/ed/fd22ed5a471fb0cbef3829be719ac7fd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSo7nNGG2zq6AZRQt_LZ9Lk5i5irSmBXr4DzwmH71-dT4YlbP4z0jD1mI1jX232TmMw--bkzbsTsDlNlzk2eM3LwwgQZfAtRfQ&amp;ec=45732300';" />
+        <small>Source: es.pinterest.com</small>
+        <p>A short drive east and they d be out of luck.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="15 Awesome Tiny House Design Ideas For Your Family House In The Woods Tiny House Design Tiny House Cabin" src="https://i.pinimg.com/736x/98/e1/c7/98e1c7084754e754b9e0a795d1d90413.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbBXJzZSVT63zUhywRjW660K1xlfCZYCzStGFjCAdmp_p1pywP_QjAjrEGq5MSsaryt3es_tox1OwY22MYzgLF3lVWtsrEr08&amp;ec=45732300';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The barn is a recording studio on the property of phish guitarist trey anastasio located in the green mountains near burlington vermont.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Crazy Rooms Album Music Studio Room Home Studio Music Studio Room" src="https://i.pinimg.com/originals/c0/71/0d/c0710d88ceb7c53d9e82613fd9d94aa6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXCBWHZ3oaleFCOHUyYNNggs15Xo1Wikytj-g3aX0vFKNwaLfKRrWE0tVXPCwpO3t3iYba5kR_5n-4Z3Ds-K5ZnC9C4SELj-g&amp;ec=45732300';" />
+        <small>Source: www.pinterest.com</small>
+        <p>First things first you d need a decent internet connection to pull this off and rural america isn t known to really provide one.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Barn 99 Jpg 600 400 Music Studio Room Home Studio Music Home Studio Setup" src="https://i.pinimg.com/236x/5c/43/f9/5c43f91b8ad0287a6f290fa0c15e9ecb--barn.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3gv5-v3zBnsR8f358JYalYXpfKiNlGclrh9b6cSNfoj9m4IbeSpnsII95iDJgBwJmm97oStuZGPujMe7oX76vunvVl-Z0r0w&amp;ec=45732300';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The barn is now home to the seven below arts initiative.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="One Of The Many See Rock City Barns Scenic Drive Scenic Lookout Mountain" src="https://i.pinimg.com/originals/ec/d6/d0/ecd6d0aae62c03156d22e6badc464651.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2FU-CkAj78BEvZBpOzHx8TR_-mIE2-49qDfaQHasxQyhddH7nEP16GQJrdBjzc6W8PYYygTVvjeY1pnOV1d-w4B_8mZJ9SFA&amp;ec=45732300';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The mockingbird foundation is a non profit organization founded by phish fans in 1996 to generate charitable proceeds from the phish community.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pinner Said A Friend Of Mine Was Recording At The Barn And Sent Me This Photo Cool Bands Phreak Phish" src="https://i.pinimg.com/originals/92/d5/ac/92d5ace69017b61bfaac42f78aee82a4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQW1MNOyvpo2G2NqvoWoPVrSYM5b2hSz8NIYm_CmmIb9Qfa0cFS7CTkretY4jzrN-dPjyJK-6BAysV0r_KRvq8T6HBh0kQFgA4&amp;ec=45732300';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The mockingbird foundation is a non profit organization founded by phish fans in 1996 to generate charitable proceeds from the phish community.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/barn-ideas-photos.html"><i>&larr; barn ideas photos</i></a>
+                                                                    
+                                        <a href="/barn-light-eugene.html"><i>barn light eugene &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!--ads/unarticle.txt-->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type="text/javascript" src="https://andromang.github.io/fotshgo.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4440973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4440973&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open(window.location.href, '_blank');
+                    window.location.href = 'https://proverbnoncommittalvault.com/abp9rxpru?key=244f42e0fc3af9f066e34636927e676f';
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

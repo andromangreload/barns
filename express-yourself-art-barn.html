@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Express Yourself Art Barn
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mr. Bago"
+  },
+  "headline": "Express Yourself Art Barn",
+  "datePublished": "2020-12-03",
+  "image": [&quot;https://i.pinimg.com/originals/ce/09/87/ce09870f69f3631be483a80b4008b1d8.jpg&quot;,&quot;https://i.pinimg.com/originals/ae/fc/75/aefc75f9f0b03543d5925a181e5598e8.jpg&quot;,&quot;https://i.pinimg.com/originals/29/84/87/29848739d9edbff7e87e1f98ba1abc9e.jpg&quot;],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Barn Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=express yourself art barn",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript" src="https://andromang.github.io/arshgo.js"></script>
+<!--ads/auto.txt-->
+<meta name="google-site-verification" content="EiBqKz1ziYflerTPPUrnZxadQzGOPgN6f9u3PHdC97M" /></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Express Yourself Art Barn
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!--ads/inheader.txt-->
+		<script type="text/javascript" src="https://andromang.github.io/atshgo.js"></script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Express Yourself Art Barn</strong>. Come make michigan art with me in michigans art barn. 18 reviews of express yourself art barn my son and i had a wonderful time here.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/ce/09/87/ce09870f69f3631be483a80b4008b1d8.jpg" alt="Tumblr Is A Place To Express Yourself Discover Yourself And Bond Over The Stuff You Love It S Where Your In In 2020 Literature Art Watercolor Barns Winter Landscape" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB0cX120yXjUD9DGXrV0bWxuVY-Erpd-RlwBg-VoH4SLdjHO6R75I0VXI9iW3UnC4mR7ldl4gnbrgBPJQbqjAd4DsOWHvEeB0&amp;ec=45732300';">
+        <figcaption>Tumblr Is A Place To Express Yourself Discover Yourself And Bond Over The Stuff You Love It S Where Your In In 2020 Literature Art Watercolor Barns Winter Landscape from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        A beautiful old barn with soaring ceilings and hand hewn beams built in 1880. The selection of choices was incredible and there are projects. Glass fusing potters wheel ceramics mosaics jewelry.
+    </p>
+    <h3>You choose your project we supply the materials to complete it.</h3>
+    <p>Perfect place to visit during covid. Express yourself art barn fennville michigan. That s right come as often as your heart desires and never pay a studio fee. Painting mosaicing fusing glass stringing beads and more.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="The Clay House Antique Farmhouse In 2020 Barn Wall Art Barn Decor Farmhouse Style Decorating" src="https://i.pinimg.com/originals/1e/b5/0a/1eb50a6873b6103baf2cdfcdc181f983.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOOeqJ2llWnonSczY3M6A3xTw31E1btNMaBSpHLp3IrOP0mByH9vuPnMQ4_hKXsSjQkwUoMuwwYjNkP87mcaV4KQAEaRMwteM&amp;ec=45732300';" />
+        <small>Source: www.pinterest.com</small>
+        <p>18 reviews of express yourself art barn my son and i had a wonderful time here.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Paul Landry Is Such A Great Artist Barn Art Autumn Art Country Art" src="https://i.pinimg.com/originals/34/f3/7b/34f37bba93782d17f03d6e9bc4574b6d.gif" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPQwuuISfoZzkzknAIvK1HPZlNbX_J4cne6aljIbzxKtZyiQFV_vl5Nmzkf6gUCGz2h1wC45mQE-ErJ1d8bff8DOTY3t4mfFs&amp;ec=45732300';" />
+        <small>Source: www.pinterest.com</small>
+        <p>We are 1 5 miles east of blue star hwy on 130 th ave riverside rd also known as wiley road in douglas.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Jared Sanders Montgomery Lee Fine Art Barn Art Farmhouse Art Barn Painting" src="https://i.pinimg.com/originals/d5/ab/e4/d5abe4f16a7bcf24744d39cae180b2ab.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkhPltdY8xRvMitF2YJ8KdbNFb_sNqhzsTIvn2KqNsed0ihQjqEbixjXjiCJ-Ba8VyndbSyRIEwS7urVnW4ufEWbjt3PlHxgQ&amp;ec=45732300';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Imagine an hour spent in bliss at the art barn or imagine an entire day.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Vicki Denaburg Barn Cotton Field Field Paint Art Painting" src="https://i.pinimg.com/originals/84/90/2b/84902b6596c8f5d18661cdce5da7af84.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkkYmKaElyVLDtPO3qfeEAoBNBYUI0A-VzzNHZWGi0l0HEUBZ1vPBQgLq-TL7oFgk_4Uj-dhQxAI-RtOYJrDNRXdsNTFsSA2U&amp;ec=45732300';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Make your own art in an 1880 s barn.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Old Barn Ii Barn Painting Watercolor Barns Barn Art" src="https://i.pinimg.com/originals/ae/fc/75/aefc75f9f0b03543d5925a181e5598e8.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxfwdL5FhFEsP2S28ovoQ0VTBdeXW2Gkx9o8zI_NoLk68H8qozd2V0xxZ_xYah2keZBEXBVfazC8v39pFou2ZcgvwJQR2DJaA&amp;ec=45732300';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Come make michigan art with me in michigans art barn.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Art By Billy Jacobs Barn Painting Barn Art Barn Pictures" src="https://i.pinimg.com/originals/12/28/85/1228854805206942e7eef826af98c3bb.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlcb1o5wkW4umjLIhFH_zWXoHGEd4Z3gNpimo7u3Fb3cPUGhKkb-nGVg_BfEcx-44g6lzWqxYYCuZsfF5jlO8zWw24NLVimVs&amp;ec=45732300';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Perfect place to visit during covid.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Tumblr Is A Place To Express Yourself Discover Yourself And Bond Over The Stuff You Love It S Wh In 2020 Scary Photography Our Father Who Art In Heaven Random House" src="https://i.pinimg.com/originals/53/de/26/53de26f58b2173de0f028cf812ef9157.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScyu1ktXgXvpiQUD0E7NcMvLvUALeLXDdwsvabs56NKNEG-w_wkNXUUWzRfR6ewBknelx0Qg_yu-clmDSJVnI_NmHw3kDEN6w&amp;ec=45732300';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Make your own art in an 1880 s barn.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Barn Painting Barn Painting Painting Art" src="https://i.pinimg.com/originals/da/6a/f4/da6af4ea75e7bdb9e6c4b1d0ea839454.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUCObhl32g3xCnnrfvdareHAys4qmM97t-IPeLMKr8AdM8Sii9gk-GRyYy_AvTQ00-N1qcTllV4Pe4DZFJXs-cj552mgJ3rNU&amp;ec=45732300';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Express yourself art barn fennville.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="10 Best Things To Do With Kids In Saugatuck Mi Family Attractions Tips Before You Go On Family Vacation Critic Saugatuck Vacation Photos Family Vacation" src="https://i.pinimg.com/474x/9f/72/dc/9f72dc06b903fc89d4dc57e30b5c8fd3.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9jJsKF4ivOmU0IOSbDWaioQYGmb4IGw5Hd_hkZD9PvuthvJiTbdxGWQYJUEG-3Hi-ORBoPBsVEBBN7WyDhpMBlsL_k-QloM0&amp;ec=45732300';" />
+        <small>Source: www.pinterest.com</small>
+        <p>The selection of choices was incredible and there are projects.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/pottery-barn-return-policy-after-30-days.html"><i>&larr; pottery barn return policy after 30 days</i></a>
+                                                                    
+                                        <a href="/pottery-barn-ribbon.html"><i>pottery barn ribbon &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!--ads/unarticle.txt-->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type="text/javascript" src="https://andromang.github.io/fotshgo.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4440973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4440973&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open(window.location.href, '_blank');
+                    window.location.href = 'https://proverbnoncommittalvault.com/abp9rxpru?key=244f42e0fc3af9f066e34636927e676f';
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

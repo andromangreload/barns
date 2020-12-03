@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Barnes Golfer
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mr. Bago"
+  },
+  "headline": "Barnes Golfer",
+  "datePublished": "2020-12-03",
+  "image": [&quot;https://i.pinimg.com/originals/a6/e2/cb/a6e2cb750db58aed9bf80ce31a73474f.jpg&quot;,&quot;https://i.pinimg.com/originals/71/1a/79/711a79174871719c860c9208ed14b897.jpg&quot;,&quot;https://i.pinimg.com/564x/c9/44/b4/c944b42df28eaa363ab76e55d3a42856.jpg&quot;],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Barn Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=barnes golfer",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript" src="https://andromang.github.io/arshgo.js"></script>
+<!--ads/auto.txt-->
+<meta name="google-site-verification" content="EiBqKz1ziYflerTPPUrnZxadQzGOPgN6f9u3PHdC97M" /></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Barnes Golfer
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!--ads/inheader.txt-->
+		<script type="text/javascript" src="https://andromang.github.io/atshgo.js"></script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Barnes Golfer</strong>. During that time he was named the pac 10 freshman of the year in 2000 pac 10 co player of the year in 2001 second team all american in 2000 and 2001 and first team all american in 2003. Barnes was born in kalamazoo michigan and raised in marion indiana where he attended marion high school.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/736x/34/95/2b/34952b5e5e0b27904d4a658c9a993fd1.jpg" alt="Pin On Sports" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkAng_3FQTLpodgI_Gw97YSvjoRRoBFVAKWw';">
+        <figcaption>Pin On Sports from in.pinterest.com</figcaption>
+    </figure>
+        <p>
+        Ricky barnes dials it in on no. He was noted for having beaten jack nicklaus twice in one day in singles match play during the 1975 ryder cup on 21 september winning 4 2 in the. He played college golf at austin peay state university located in clarksville tennessee at which he was named ohio valley athletic conference freshmen of the year in 2007 and player of the year in 2009.
+    </p>
+    <h3>He was noted for having beaten jack nicklaus twice in one day in singles match play during the 1975 ryder cup on 21 september winning 4 2 in the.</h3>
+    <p>Pga tour stats video photos results and career highlights. Barnes played in 6 consecutive ryder cup matches from 1969 to 1979. During that time he was named the pac 10 freshman of the year in 2000 pac 10 co player of the year in 2001 second team all american in 2000 and 2001 and first team all american in 2003. Brian william barnes 3 june 1945 9 september 2019 was a professional golfer he won 9 times on the european tour between 1972 and 1981 and twice won the senior british open.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin By Circle Of Golf On Author Ji Kim Teaching Methods Barnes And Noble Author" src="https://i.pinimg.com/originals/ad/23/e8/ad23e86e11da4a3afcb83b469406aedd.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUcLAWluojo_zZKMARu4SeFgZoMofHOLb5Sw';" />
+        <small>Source: www.pinterest.com</small>
+        <p>He moved to the united states and turned professional in 1906 but never became an american citizen.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Golf Test Shoot" src="https://i.pinimg.com/originals/01/75/5b/01755b5cc4aa7774162b15201a493239.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdqwNbILJfNMTrp7u3luaaTlg7_wbmJmYVQg';" />
+        <small>Source: in.pinterest.com</small>
+        <p>The official pga tour profile of erik barnes.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Ricky Barnes And Allison Micheletti Hit Rooftop Shot Before Hp Byron Nelson Championship Byron Nelson Barnes Pga Tour" src="https://i.pinimg.com/600x315/17/68/df/1768dfee7dc41918bf8aa2fea6ac44c6.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQgDiU5mHiG2hJJddfLH1SB-XxpgpuF3h3gQ';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Anl shutterstock brian barnes who famously beat jack nicklaus twice in one day in the ryder cup has died at the age of 74.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Pin On Sports" src="https://i.pinimg.com/736x/34/95/2b/34952b5e5e0b27904d4a658c9a993fd1.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkAng_3FQTLpodgI_Gw97YSvjoRRoBFVAKWw';" />
+        <small>Source: in.pinterest.com</small>
+        <p>The son of a golf club secretary was regarded as.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Piercy Barnes Share 54 Hole Lead At Barbasol Championship Scott Piercy Barbasol Barnes" src="https://i.pinimg.com/originals/35/fd/33/35fd33eea6b423654c6206853fd48ba4.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ75EeRaO3Xn8LBHzVvMsW0dVbXSkG7L8476A';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Pga tour golfer ricky barnes explains tom brady s golf game as the quarterback is set to play in a charity match for coronavirus relief.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Paula Creamer With Black Knee Socks And Golf Skirt Golf Fashion Girls Golf Golf Outfit" src="https://i.pinimg.com/originals/64/71/ac/6471ac5c06d6767cb4b9c116b1456566.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHo3fxtbVoJYGu8W1pI3rqkX_0UkW7eV4LAw';" />
+        <small>Source: ar.pinterest.com</small>
+        <p>Pga tour stats video photos results and career highlights.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Barnes 10 Birdie Blast Takes 1shot National Bank Of Oman Classic Lead Oman Golf Golf Online Golf Classic" src="https://i.pinimg.com/originals/39/9f/88/399f88a0e52aedfab211295635ec7eea.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAiJKfb4NXPMQU46YO4lKUork-9alzj_BNOQ';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Ricky barnes gift idea.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="One Of The Things I M Most Proud Of Looking Back In My Little Black Book Is That My Career Had A Lot Of Consisten Best Golf Club Sets Golf Quotes Golf" src="https://i.pinimg.com/564x/c9/44/b4/c944b42df28eaa363ab76e55d3a42856.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6rWqDrdT1gIKo8fqXM60zKdg-gdQkwo9skg';" />
+        <small>Source: www.pinterest.com</small>
+        <p>During that time he was named the pac 10 freshman of the year in 2000 pac 10 co player of the year in 2001 second team all american in 2000 and 2001 and first team all american in 2003.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Spieth S Majors Consistency Rare Golf Ropa Equipo" src="https://i.pinimg.com/originals/df/57/06/df570677412918804479f553549d8910.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYLOwIC0WvKVx1h5hntZN62e-WqAjMbGh-Ng';" />
+        <small>Source: www.pinterest.com</small>
+        <p>B rian barnes the scotsman who famously beat jack nicklaus twice in a single day at the ryder cup has died aged 74 following a short illness.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/pet-barn-hobart.html"><i>&larr; pet barn hobart</i></a>
+                                                                    
+                                        <a href="/pet-barn-owl.html"><i>pet barn owl &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!--ads/unarticle.txt-->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type="text/javascript" src="https://andromang.github.io/fotshgo.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4440973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4440973&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open(window.location.href, '_blank');
+                    window.location.href = 'https://proverbnoncommittalvault.com/abp9rxpru?key=244f42e0fc3af9f066e34636927e676f';
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>

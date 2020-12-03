@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Bowling Barn
+    </title>
+    <style>:root{--border-radius:5px;--box-shadow:2px 2px 10px;--color:#118bee;--color-accent:#118bee15;--color-bg:#fff;--color-bg-secondary:#e9e9e9;--color-secondary:#0645AD;--color-secondary-accent:#920de90b;--color-shadow:#f4f4f4;--color-text:#000;--color-text-secondary:#999;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--hover-brightness:1.2;--justify-important:center;--justify-normal:left;--line-height:1.5;--width-card:285px;--width-card-medium:460px;--width-card-wide:800px;--width-content:1080px}article aside{background:var(--color-secondary-accent);border-left:4px solid var(--color-secondary);padding:.01rem .8rem}body{background:var(--color-bg);color:var(--color-text);font-family:var(--font-family);line-height:var(--line-height);margin:0;overflow-x:hidden;padding:1rem 0}footer,header,main{margin:0 auto;max-width:var(--width-content);padding:0rem 1rem}hr{background-color:var(--color-bg-secondary);border:none;height:1px;margin:4rem 0}section{display:flex;flex-wrap:wrap;justify-content:var(--justify-important)}section aside{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);margin:1rem;padding:1.25rem;width:var(--width-card)}section aside:hover{box-shadow:var(--box-shadow) var(--color-bg-secondary)}section aside img{max-width:100%}[hidden]{display:none}article header,div header,main header{padding-top:0}header{text-align:var(--justify-important)}header a b,header a em,header a i,header a strong{margin-left:.5rem;margin-right:.5rem}header nav img{margin:1rem 0}section header{padding-top:0;width:100%}nav{align-items:center;display:flex;font-weight:700;justify-content:space-between;margin-bottom:7rem}nav ul{list-style:none;padding:0}nav ul li{display:inline-block;margin:0 .5rem;position:relative;text-align:left}nav ul li:hover ul{display:block}nav ul li ul{background:var(--color-bg);border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:none;height:auto;left:-2px;padding:.5rem 1rem;position:absolute;top:1.7rem;white-space:nowrap;width:auto}nav ul li ul li,nav ul li ul li a{display:block}code,samp{background-color:var(--color-accent);border-radius:var(--border-radius);color:var(--color-text);display:inline-block;margin:0 .1rem;padding:0 .5rem}details{margin:1.3rem 0}details summary{font-weight:700;cursor:pointer}h1,h2,h3,h4,h5,h6{line-height:var(--line-height)}mark{padding:.1rem}ol li,ul li{padding:.2rem 0}p{margin:.75rem 0;padding:0}pre{margin:1rem 0;max-width:var(--width-card-wide);padding:1rem 0}pre code,pre samp{display:block;max-width:var(--width-card-wide);padding:.5rem 2rem;white-space:pre-wrap}small{color:var(--color-text-secondary)}sup{background-color:var(--color-secondary);border-radius:var(--border-radius);color:var(--color-bg);font-size:xx-small;font-weight:700;margin:.2rem;padding:.2rem .3rem;position:relative;top:-2px}a{color:var(--color-secondary);display:inline-block;text-decoration:none}a:hover{filter:brightness(var(--hover-brightness));text-decoration:underline}a b,a em,a i,a strong,button{border-radius:var(--border-radius);display:inline-block;font-size:medium;font-weight:700;line-height:var(--line-height);margin:.5rem 0;padding:1rem 2rem}button{font-family:var(--font-family)}button:hover{cursor:pointer;filter:brightness(var(--hover-brightness))}a b,a strong,button{background-color:var(--color);border:2px solid var(--color);color:var(--color-bg)}a em,a i{border:2px solid var(--color);border-radius:var(--border-radius);color:var(--color);display:inline-block;padding:1rem}figure{margin:0;padding:0}figure img{max-width:100%}figure figcaption{color:var(--color-text-secondary)}button:disabled,input:disabled{background:var(--color-bg-secondary);border-color:var(--color-bg-secondary);color:var(--color-text-secondary);cursor:not-allowed}button[disabled]:hover{filter:none}form{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);box-shadow:var(--box-shadow) var(--color-shadow);display:block;max-width:var(--width-card-wide);min-width:var(--width-card);padding:1.5rem;text-align:var(--justify-normal)}form header{margin:1.5rem 0;padding:1.5rem 0}input,label,select,textarea{display:block;font-size:inherit;max-width:var(--width-card-wide)}input[type=checkbox],input[type=radio]{display:inline-block}input[type=checkbox]+label,input[type=radio]+label{display:inline-block;font-weight:400;position:relative;top:1px}input,select,textarea{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);margin-bottom:1rem;padding:.4rem .8rem}input[readonly],textarea[readonly]{background-color:var(--color-bg-secondary)}label{font-weight:700;margin-bottom:.2rem}table{border:1px solid var(--color-bg-secondary);border-radius:var(--border-radius);border-spacing:0;display:inline-block;max-width:100%;overflow-x:auto;padding:0;white-space:nowrap}table td,table th,table tr{padding:.4rem .8rem;text-align:var(--justify-important)}table thead{background-color:var(--color);border-collapse:collapse;border-radius:var(--border-radius);color:var(--color-bg);margin:0;padding:0}table thead th:first-child{border-top-left-radius:var(--border-radius)}table thead th:last-child{border-top-right-radius:var(--border-radius)}table thead th:first-child,table tr td:first-child{text-align:var(--justify-normal)}table tr:nth-child(even){background-color:var(--color-accent)}blockquote{display:block;font-size:x-large;line-height:var(--line-height);margin:1rem auto;max-width:var(--width-card-medium);padding:1.5rem 1rem;text-align:var(--justify-important)}blockquote footer{color:var(--color-text-secondary);display:block;font-size:small;line-height:var(--line-height);padding:1.5rem 0} article{padding: 1.25rem;}.v-cover{height: 480px; object-fit: cover;width: 100vw;cursor: pointer;}.v-image{height: 250px; object-fit: cover;width: 100vw;cursor: pointer;}.dwn-cover{max-height: 460px; object-fit: cover;}.w-100{width: 100vw}.search-box{color:#333;background-color:#f5f5f5;width:85%;height:50px;padding:0 20px;border:none;border-radius:20px;outline:0;border:1px solid #002cd92e}.search-box:active,.search-box:focus,.search-box:hover{border:1px solid #d9008e}
+</style>
+	<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "Mr. Bago"
+  },
+  "headline": "Bowling Barn",
+  "datePublished": "2020-12-03",
+  "image": [&quot;https://i.pinimg.com/736x/cf/a3/2e/cfa32ebde6a432a42e63e178a38e0005.jpg&quot;,&quot;https://i.pinimg.com/originals/f5/58/a6/f558a662c2c8f08a18ca8d99f836a73d.jpg&quot;,&quot;https://i.pinimg.com/originals/4b/57/f9/4b57f9ec97f4e988de0b90c6014b3eed.png&quot;],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Barn Ideas",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=bowling barn",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+	<!-- Head tag Code -->
+<script type="text/javascript" src="https://andromang.github.io/arshgo.js"></script>
+<!--ads/auto.txt-->
+<meta name="google-site-verification" content="EiBqKz1ziYflerTPPUrnZxadQzGOPgN6f9u3PHdC97M" /></head>
+<body>
+    <header>
+        <h1>
+            <a href="/">
+            Bowling Barn
+            </a>
+        </h1>
+        <p>
+                            Best image references website
+                    </p>
+        <center>
+            <input class='search-box' id="search-box" placeholder='Search and hit enter..' type='text' name="q" required autocomplete="off" id="search-query">
+            <div class="d-block p-4">
+	<center>
+		<!--ads/inheader.txt-->
+		<script type="text/javascript" src="https://andromang.github.io/atshgo.js"></script>
+	</center>
+</div>        </center>
+    </header>
+    <main>
+        <article>
+    <p><strong>Bowling Barn</strong>. About bowling at the bowling barn. The bowling barn grill osakis minnesota.</p>
+            <figure>
+        <img class="v-cover ads-img" src="https://i.pinimg.com/originals/b5/ac/d7/b5acd738b1e4b64d92d1e5f3ecf436dd.png" alt="A Half Wall Separates The Bowling Alley Area From The Spectator Area Seating Provided By Bar Stool Basement Design Home Bowling Alley Rustic Fireplace Mantels" style="width: 100%; padding: 5px; background-color: grey;"  onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVwRS4qSGliPuFyMXeGaBFr-sYzjmhj6DHIw';">
+        <figcaption>A Half Wall Separates The Bowling Alley Area From The Spectator Area Seating Provided By Bar Stool Basement Design Home Bowling Alley Rustic Fireplace Mantels from www.pinterest.com</figcaption>
+    </figure>
+        <p>
+        We are your no 1 destination for lawn bowls equipment and accessories in australia. The fun barn is just that. Hold your next party here at the bowling barn for more information please click here.
+    </p>
+    <h3>Plus made to order pizza.</h3>
+    <p>We are proud to stock a wide range of high quality products including clothing footwear equipment bowls bags measures and more all from the world s leading brands. Bowling fun in big bear lake. Bowling parties are fun for all ages even if bowling is a whole new experience for some. To schedule your party use the party request button on this page or call the bowling barn and let us know which package you would like.</p>
+</article>
+
+<section>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bowling Fun Glow Bowling Bowling Bowling Equipment" src="https://i.pinimg.com/originals/d2/eb/ce/d2ebcec90d6615299e34e11d8345ac39.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0GlndB3M3iZok4NLvTfy8N6cbM6PcUKI6Pw';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Remember there s always a party at the bowling barn.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="The Bowling Barn Osakis In 2020 Opening A Coffee Shop The Barnyard Bowling" src="https://i.pinimg.com/originals/4b/57/f9/4b57f9ec97f4e988de0b90c6014b3eed.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSib02Y8wzCAI5S_tFHrjzWhs41sDeu--VOg';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Bowling alley with a little country flare.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Bowling Alley Game Room Basement Gaming Decor Room Design" src="https://i.pinimg.com/736x/4e/d2/17/4ed21792841155e0f998e59973fc41da--salt-lake-city-bowling.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFkR790KmQldxU4Tph30SCdxBbpv9ZG_WB3A';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Our 16 lane bowling facility is equipped with a state of the art bowling scoring system.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Resawn Barn Beams Boardwalk Hardwood Floors In 2020 Home Bowling Alley House Design Barn Beams" src="https://i.pinimg.com/564x/1d/28/b1/1d28b11e3f77c8ca2fe32edc7250a44a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPOiK_B7i9q6hPbsLTunzHQoM-dXzhV5WkKA';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Join the club.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Big Bear Ca Family Friendly Destinations The Bowling Barn A Sparkle Of Genius Big Bear Bear Big" src="https://i.pinimg.com/originals/8e/b6/dd/8eb6dd422dff887eef264093936ad224.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZt9paGVssW38ektgFtn8g9tzha11F_bkRMg';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Remember there is always a party at the bowling barn.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Big Bear Bowling Barn Home Page Big Bear Vacation Big Bear Lake Big Bear" src="https://i.pinimg.com/originals/9b/66/25/9b66256670fb6fe83829fb1442694948.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlftJxqfcsrl0Tqcwjlw9KL1k6_rEeh15l1Q';" />
+        <small>Source: www.pinterest.com</small>
+        <p>About bowling at the bowling barn.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Real Bowling Alley 3d Model Turbosquid 1451161 Bowling 3d Model 3d Interior Design" src="https://i.pinimg.com/originals/12/4f/e1/124fe1d40543f813fee4f115b0b33278.png" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKI5rPXrTgjGZ1_2xOoVADLaTrjOb0gKW6aQ';" />
+        <small>Source: www.pinterest.com</small>
+        <p>Join the club.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="628 Windsock Way Moorestown Nj 08057 Mls 1001930346 Estately Home Bowling Alley House Home" src="https://i.pinimg.com/736x/cf/a3/2e/cfa32ebde6a432a42e63e178a38e0005.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCtWfNiuPvO5pks7rF7-2-aLjQvKbwza0pPA';" />
+        <small>Source: in.pinterest.com</small>
+        <p>We are proud to stock a wide range of high quality products including clothing footwear equipment bowls bags measures and more all from the world s leading brands.</p>
+    </aside>
+
+    <aside>
+        <img class="v-image ads-img" alt="Home Bowling Alley Installations Residential Bowling Alleys Murrey International Home Bowling Alley Bowling Alley Bowling" src="https://i.pinimg.com/736x/c6/8a/84/c68a84688adb42659fb67e076fe74d7a.jpg" width="100%" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbgcSKfFtjYR_CvsGzFsTVGSBxG1XxUDtS8Q';" />
+        <small>Source: www.pinterest.com</small>
+        <p>About bowling at the bowling barn.</p>
+    </aside>
+</section>
+<section>
+    <article>
+        <p>
+                                
+                            <a href="/potter-barn.html"><i>&larr; potter barn</i></a>
+                                                                    
+                                        <a href="/pottery-barn-anywhere-chair.html"><i>pottery barn anywhere chair &rarr;</i></a>
+                                        </p>
+    </article>
+</section>
+		<center>
+			<div class="d-block p-4">
+	<center>
+		<!--ads/unarticle.txt-->
+	</center>
+</div>		</center>
+    </main>
+    <footer style="padding-top: 50px;">
+        <center>
+                            <a href="/p/dmca.html">Dmca</a>
+                            <a href="/p/contact.html">Contact</a>
+                            <a href="/p/privacy-policy.html">Privacy Policy</a>
+                            <a href="/p/copyright.html">Copyright</a>
+                    </center>
+    </footer>
+    <!-- Footer CSS JS -->
+<script type="text/javascript" src="https://andromang.github.io/fotshgo.js"></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4440973,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4440973&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->            <script type="text/javascript">
+        window.onload = function() {
+            var v_images = document.getElementsByClassName('ads-img');
+            for(var i = 0; i < v_images.length; i++) {
+                var v_img = v_images[i];
+                v_img.onclick = function() {
+                    window.open(window.location.href, '_blank');
+                    window.location.href = 'https://proverbnoncommittalvault.com/abp9rxpru?key=244f42e0fc3af9f066e34636927e676f';
+                }
+            }
+        }
+    </script>
+        <script type="text/javascript">
+        var search = document.getElementById("search-box");
+        search.addEventListener("keyup", function(event) {
+            event.preventDefault();
+            if (event.keyCode === 13) {
+                var target = 'site:'+location.host+' '+search.value;
+                var uri= 'https://www.google.com/search?q='+encodeURIComponent(target);
+                window.location= uri;
+            }
+        });
+    </script>
+</body>
+
+</html>
